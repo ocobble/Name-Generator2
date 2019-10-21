@@ -7,22 +7,16 @@
 
 
 <!-- 2 text boxes-->
-<div class=form>
-      Enter first name: <input type="text" name="fname"><br>
-      Enter last name: <input type="text" name="lname"><br>
-      Select a Hogwarts house: 
-      <select>
-        <option value="G">Gryffindor</option>
-        <option value="saab">Ravenclaw</option>
-        <option value="mercedes">Slytherin</option>
-        <option value="audi">Hufflepuff</option>
-        <option value="idk">Idk man</option>
-      </select> <br>
-      <button>Ninjafy!!</button>
-  
-
+<div class=content>
+  Enter first name: <input [(ngModel)]="firstName" id="firstName"><br>
+  Enter last name: <input [(ngModel)]="lastName" id="firstName"><br>
+  Select a Hogwarts house: 
+    <select [(ngModel)]="hogwartsHouse">
+      <option value="G">Gryffindor</option>
+      <option value="R">Ravenclaw</option>
+      <option value="S">Slytherin</option>
+      <option value="H">Hufflepuff</option>
+      <option value="W">Idk man</option>
+    </select> <br>
+  <button (click)="buttonClick()">Ninjafy!!</button>
 </div>
-
-<!-- List of Hogwarts houses-->
-
-<!-- Button to submit -->

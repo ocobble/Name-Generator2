@@ -18,7 +18,7 @@ export class AppComponent {
 
   buttonClick() {
     console.log("Ninjafy!");
-    this.ninjafy = true;
+    this.ninjafyTime = true;
   }
 
   
@@ -35,11 +35,12 @@ export class AppComponent {
         while (index < 3 && index < name.length) { // You can change this!
             var letter = name.charAt(index);
             letter = letter.toLowerCase();
-            ninjyName += this.ninjaSounds[letter.charCodeAt(0) - 10];
+            console.log(letter.charCodeAt(0) - 97);
+            ninjyName += this.ninjaSounds[letter.charCodeAt(0) - 97];
+            index += 1;
         }
         
-        ninjyName = ninjyName.charAt(0).toUpperCase() + ninjyName.substring(1, ninjyName.length);
-        
-        return ninjyName;
+        this.ninjaName = ninjyName.charAt(0).toUpperCase() + ninjyName.substring(1, ninjyName.length);
+        this.ninjafyTime = true;
     }
 }

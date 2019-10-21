@@ -14,8 +14,11 @@ export class AppComponent {
             "ji", "ri", "ki", "zus", "me", "ta", "rin", "to", "mo", "no", "ke", 
             "shi", "ari", "chi", "ha", "ru", "mei", "na", "fu", "zi"];
   ninjaName = 'mystery';
+  ninjafyTime:boolean = false;
+
   buttonClick() {
     console.log("Ninjafy!");
+    this.ninjafy = true;
   }
 
   

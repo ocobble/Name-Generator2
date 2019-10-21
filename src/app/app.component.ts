@@ -10,8 +10,10 @@ export class AppComponent {
   firstName = 'Olivia';
   lastName = 'Cobble';
   hogwartsHouse = 'wut';
+  ninjafy:boolean = false;
 
   buttonClick() {
     console.log("Ninjafy!");
+    this.ninjafy = true;
   }
 }

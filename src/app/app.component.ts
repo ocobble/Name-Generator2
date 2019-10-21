@@ -13,7 +13,8 @@ export class AppComponent {
   ninjaSounds = ["ka", "zu", "mi", "te", "ku", "lu", 
             "ji", "ri", "ki", "zus", "me", "ta", "rin", "to", "mo", "no", "ke", 
             "shi", "ari", "chi", "ha", "ru", "mei", "na", "fu", "zi"];
-  ninjaName = 'mystery';
+  ninjaFirstName = 'mystery';
+  ninjaLastName = 'ninja';
   ninjafyTime:boolean = false;
 
   buttonClick() {

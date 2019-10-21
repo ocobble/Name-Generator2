@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Name-Gen2';
+  firstName = 'Olivia';
+  lastName = 'Cobble';
+  hogwartsHouse = 'wut';
+
+  buttonClick() {
+    console.log("Ninjafy!");
+  }
 }

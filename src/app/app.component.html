@@ -18,9 +18,9 @@
       <option value="H">Hufflepuff</option>
       <option value="W">Idk man</option>
     </select> <br>
-  <button (click)="buttonClick()">Ninjafy!!</button>
+  <button (click)="ninjafy(firstName)">Ninjafy!!</button>
 </div>
 
 <div class=results *ngIf="ninjafyTime">
-  Ninja name is ...
+  Ninja name is {{ninjafy(firstName)}}
 </div>

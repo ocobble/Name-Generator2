@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-name',
+  templateUrl: './name.component.html',
+  styleUrls: ['./name.component.css']
 })
-export class AppComponent {
+export class NameComponent implements OnInit {
+
   title = 'Name-Gen2';
   firstName = 'Olivia';
   lastName = 'Cobble';
@@ -48,5 +49,10 @@ export class AppComponent {
         return ninjyName.charAt(0).toUpperCase() + ninjyName.substring(1, ninjyName.length);
     }
 
+
+  constructor() { }
+
+  ngOnInit() {
+  }
 
 }

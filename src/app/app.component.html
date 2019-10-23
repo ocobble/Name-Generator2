@@ -1,26 +1,30 @@
 
 
 <div class=header >
-  <h1>Naruto!!!!</h1>
+  <h1>~Naruto Name Generator~</h1>
   <img src="assets/Images/nar.jpg" alt="Naruto!!!">
 </div>
 
-
-<!-- 2 text boxes-->
+<nav>
+  <a routerLink="/name" routerLinkActive="active">Name</a>
+  <a routerLink="/village" routerLinkActive="active">Village</a>
+</nav>
+<!--
 <div class=content>
   Enter first name: <input [(ngModel)]="firstName" id="firstName"><br>
   Enter last name: <input [(ngModel)]="lastName" id="firstName"><br>
   Select a Hogwarts house: 
-    <select [(ngModel)]="hogwartsHouse">
-      <option value="G">Gryffindor</option>
-      <option value="R">Ravenclaw</option>
-      <option value="S">Slytherin</option>
-      <option value="H">Hufflepuff</option>
-      <option value="W">Idk man</option>
+    <select [(ngModel)]="ninjaVillage">
+      <option value="Leaf">Gryffindor</option>
+      <option value="Mist">Ravenclaw</option>
+      <option value="Sand">Slytherin</option>
+      <option value="Cloud">Hufflepuff</option>
+      <option value="Stone">Idk man</option>
     </select> <br>
   <button (click)="ninjafy()">Ninjafy!!</button>
 </div>
 
 <div class=results *ngIf="ninjafyTime">
   Your ninja name is {{ninjaFirstName}} {{ninjaLastName}} of the {{ninjaVillage}} village!
-</div>
+</div>-->
+<router-outlet></router-outlet>

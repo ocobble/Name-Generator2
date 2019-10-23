@@ -15,6 +15,7 @@ export class AppComponent {
             "shi", "ari", "chi", "ha", "ru", "mei", "na", "fu", "zi"];
   ninjaFirstName = 'mystery';
   ninjaLastName = 'ninja';
+  ninjaVillage = 'A village';
   ninjafyTime:boolean = false;
 
   buttonClick() {
@@ -22,9 +23,14 @@ export class AppComponent {
     this.ninjafyTime = true;
   }
 
-  
+  ninjafy() {
+    this.ninjaFirstName = this.ninjaHelper(this.firstName);
+    this.ninjaLastName = this.ninjaHelper(this.lastName);
+    this.ninjaVillage = this.ninjaHelper2(this.hogwartsHouse);
+    this.ninjafyTime = true;
+  }
 
-    ninjafy(name:string) {
+    ninjaHelper(name: string) {
         var ninjyName:string = "";
         
         if (name.length == 0)
@@ -41,7 +47,22 @@ export class AppComponent {
             index += 1;
         }
         
-        this.ninjaName = ninjyName.charAt(0).toUpperCase() + ninjyName.substring(1, ninjyName.length);
-        this.ninjafyTime = true;
+        return ninjyName.charAt(0).toUpperCase() + ninjyName.substring(1, ninjyName.length);
+    }
+
+    ninjaHelper2(hog: string) {
+      switch(hog){
+        case "G":
+          return "Leaf";
+        case "S":
+          return "Sand";
+        case "H":
+          return "Cloud";
+        case "R":
+          return "Mist";
+        default:
+          return "Stone";
+      }
+
     }
 }

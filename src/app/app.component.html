@@ -2,7 +2,7 @@
 
 <div class=header >
   <h1>Naruto!!!!</h1>
-  <img src="nar.jpg" alt="Naruto!!!">
+  <img src="assets/Images/nar.jpg" alt="Naruto!!!">
 </div>
 
 
@@ -18,9 +18,9 @@
       <option value="H">Hufflepuff</option>
       <option value="W">Idk man</option>
     </select> <br>
-  <button (click)="ninjafy(firstName)">Ninjafy!!</button>
+  <button (click)="ninjafy()">Ninjafy!!</button>
 </div>
 
 <div class=results *ngIf="ninjafyTime">
-  Ninja name is {{ninjafy(firstName)}}
+  Your ninja name is {{ninjaFirstName}} {{ninjaLastName}} of the {{ninjaVillage}} village!
 </div>

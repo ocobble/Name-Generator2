@@ -1,1 +1,29 @@
-<p>village works!</p>
+<h4>What hogwarts house do you consider yourself a part of?</h4>
+<input type="radio" name="hog" [value]="0" [(ngModel)]="q1"> Gryffindor <br>
+<input type="radio" name="hog" [value]="1" [(ngModel)]="q1"> Slytherin <br>
+<input type="radio" name="hog" [value]="2" [(ngModel)]="q1"> Hufflepuff <br>
+<input type="radio" name="hog" [value]="3" [(ngModel)]="q1"> Ravenclaw <br>
+<input type="radio" name="hog" [value]="4" [(ngModel)]="q1"> What's Harry Potter? <br>
+
+<h4>Do you enjoy running?</h4>
+<input type="radio" name="run" [value]="0" [(ngModel)]="q2"> I naruto run everywhere, believe it! <br>
+<input type="radio" name="run" [value]="1" [(ngModel)]="q2"> I run to be faster than my enemies. <br>
+<input type="radio" name="run" [value]="2" [(ngModel)]="q2"> Not on my own, but I'll run with a friend. <br>
+<input type="radio" name="run" [value]="3" [(ngModel)]="q2"> Ew no, I'd rather stay inside. <br>
+<input type="radio" name="run" [value]="4" [(ngModel)]="q2"> I like to jog to stay in shape. <br>
+
+<h4>What kind of books do you enjoy reading?</h4>
+<input type="radio" name="book" [value]="0" [(ngModel)]="q3"> Adventure books <br>
+<input type="radio" name="book" [value]="1" [(ngModel)]="q3"> Psychological thrillers <br>
+<input type="radio" name="book" [value]="2" [(ngModel)]="q3"> Novels <br>
+<input type="radio" name="book" [value]="3" [(ngModel)]="q3"> Nonfiction <br>
+<input type="radio" name="book" [value]="4" [(ngModel)]="q3"> Ew reading <br>
+
+<h4>You are at the fair. What are you most excited to do?</h4>
+<input type="radio" name="fair" [value]="0" [(ngModel)]="q4"> Eat fried food! <br>
+<input type="radio" name="fair" [value]="1" [(ngModel)]="q4"> Ride roller coasters <br>
+<input type="radio" name="fair" [value]="2" [(ngModel)]="q4"> Walk around the fairgrounds with my friends <br>
+<input type="radio" name="fair" [value]="3" [(ngModel)]="q4"> Check out some live shows or exhibits <br>
+<input type="radio" name="fair" [value]="4" [(ngModel)]="q4"> Go-karts <br>
+
+<button (click)="buttonclick()">Submit</button>
